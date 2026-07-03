@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prier ensemble — Paroisse Sainte Émilie des Causses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="images\logoPSEC-Rond.png" alt="Logo Paroisse Sainte Émilie des Causses" class="nav-logo-cross" />
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">Sainte Émilie des Causses</span>
+      <span class="nav-logo-sub">Paroisse · Aveyron</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="la-paroisse.html">La Paroisse</a></li>
+    <li><a href="etapes-de-vie.html">Étapes de vie</a></li>
+    <li><a href="prier.html" class="active">Prier</a></li>
+    <li><a href="s-engager.html">S'engager</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-burger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="hero-prier" id="hero">
+  <div class="etoiles"></div>
+  <!-- Étoiles JS -->
+  <div class="bougie-wrap">
+    <svg width="120" height="220" viewBox="0 0 120 220" fill="none">
+      <rect x="45" y="100" width="30" height="120" rx="4" fill="rgba(200,151,31,.6)"/>
+      <ellipse class="flamme" cx="60" cy="95" rx="14" ry="22" fill="rgba(232,184,75,.9)"/>
+      <ellipse cx="60" cy="88" rx="7" ry="14" fill="rgba(255,220,100,.8)"/>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Groupes de prière & contemplation</div>
+    <h1 class="hero-h1">Venez<br><em>prier</em> avec nous</h1>
+    <p class="hero-sub">Nos groupes de prière vous accueillent tout au long de l'année. Que vous soyez habitué ou que vous découvriez la prière, il y a une place pour vous.</p>
+    <div class="hero-verse">
+      « Il est là… je suis là. Nous ne sommes jamais seuls. »
+      <cite>— Esprit de l'Adoration eucharistique</cite>
+    </div>
+    <div class="hero-btns" style="margin-top:1.5rem;">
+      <a href="#adoration" class="btn btn-or">🕯️ Adoration</a>
+      <a href="#rosaire"   class="btn btn-ghost">📿 Rosaire</a>
+      <a href="#charisma"  class="btn btn-ghost">✨ Renouveau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── GROUPES ── -->
+<section class="bg-ivoire">
+  <div class="container">
+    <div class="reveal text-center" style="margin-bottom:3rem;">
+      <div class="sec-label">Vie spirituelle</div>
+      <h2 class="sec-title">Nos groupes <em>de prière</em></h2>
+      <div class="sec-divider" style="margin:1.2rem auto;"></div>
+      <p class="sec-lead" style="margin:0 auto;">Trois groupes distincts, un même désir : rencontrer Dieu et se laisser transformer par sa présence.</p>
+    </div>
+
+    <div class="grid-3">
+      <!-- ADORATION -->
+      <div class="groupe-card gc-adoration reveal reveal-delay-1" id="adoration">
+        <div class="groupe-header">
+          <span class="groupe-icon-big">🕯️</span>
+          <div class="groupe-name">Adoration Eucharistique</div>
+          <span class="groupe-horaire">⏰ Jeudi & Vendredi</span>
+        </div>
+        <div class="groupe-body">
+          <p class="groupe-desc">L'adoration eucharistique silencieuse est une forme d'oraison où nous prions devant l'hostie exposée dans un ostensoir. Nous adorons le Christ ressuscité présent dans le Saint Sacrement.<br><br>Nous « voyons » Dieu avec les yeux du cœur à travers le signe du pain consacré et nous expérimentons sa miséricorde infinie. <em>Il est là… je suis là.</em> Nous ne sommes jamais seuls.</p>
+          <div class="groupe-lieu">
+            <span>📍</span> Jeudi : Église de Sébazac (17h45–18h30)
+          </div>
+          <div class="groupe-lieu" style="margin-top:.4rem;">
+            <span>📍</span> Vendredi : Oratoire Saint-Joseph (18h–19h)
+          </div>
+        </div>
+      </div>
+
+      <!-- ROSAIRE -->
+      <div class="groupe-card gc-rosaire reveal reveal-delay-2" id="rosaire">
+        <div class="groupe-header">
+          <span class="groupe-icon-big">📿</span>
+          <div class="groupe-name">Équipes du Rosaire</div>
+          <span class="groupe-horaire">📅 1 fois / mois</span>
+        </div>
+        <div class="groupe-body">
+          <p class="groupe-desc">Les Équipes du Rosaire sont à la fois un mouvement d'évangélisation et une école de prière. Elles sont aussi un mouvement de foi et d'apostolat des laïcs.<br><br>Elles se réunissent <strong>dans les maisons</strong> — pas dans les églises — au domicile de l'un ou de l'autre. C'est une idée chère : <em>« La maison d'un chrétien est une maison de prière. »</em><br><br>Chaque membre médite un mystère du Rosaire, en lien avec les autres grâce au « Calendrier d'Équipe ». Chacun est comme un élément d'un immense Rosaire.</p>
+          <div class="groupe-lieu"><span>📍</span> Dans les maisons des membres, à proximité</div>
+          <div style="margin-top:.8rem;font-size:.82rem;color:var(--pierre);font-style:italic;">
+            « Marie, sois Celle qui, chez moi, reçoit. »
+          </div>
+        </div>
+      </div>
+
+      <!-- RENOUVEAU -->
+      <div class="groupe-card gc-charisma reveal reveal-delay-3" id="charisma">
+        <div class="groupe-header">
+          <span class="groupe-icon-big">✨</span>
+          <div class="groupe-name">Renouveau Charismatique</div>
+          <span class="groupe-horaire">⏰ Chaque lundi 20h30</span>
+        </div>
+        <div class="groupe-body">
+          <p class="groupe-desc">Chaque lundi soir, le groupe <strong>« La source d'eau vive »</strong> se réunit à l'Oratoire Saint-Joseph pour :<br><br>
+          <span style="display:block;padding:.3rem 0;">✦ Louer le Seigneur</span>
+          <span style="display:block;padding:.3rem 0;">✦ Accueillir les dons du Seigneur</span>
+          <span style="display:block;padding:.3rem 0;">✦ Écouter la Parole de Dieu</span>
+          <span style="display:block;padding:.3rem 0;">✦ Prier pour des personnes qui le demandent</span>
+          <span style="display:block;padding:.3rem 0;">✦ Vivre des temps de partage fraternel</span>
+          </p>
+          <div class="groupe-lieu"><span>📍</span> Oratoire Saint-Joseph — Onet-le-Château</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ADORATION FOCUS ── -->
+<section class="bg-encre" style="background:var(--encre);">
+  <div class="container">
+    <div class="adoration-focus reveal">
+      <div class="adoration-cross">
+        <div style="font-family:var(--caps);font-size:.7rem;letter-spacing:.2em;color:var(--or-clair);margin-bottom:1rem;">✦ ADORATION EUCHARISTIQUE ✦</div>
+        <h3>L'Eucharistie, cœur de la vie chrétienne</h3>
+        <p>Quand nous adorons, nous portons l'Église et nous intercédons pour le monde. L'adoration n'est pas une pratique réservée aux âmes mystiques — c'est un rendez-vous d'amour ouvert à tous.</p>
+        <p>« C'est bien par cet acte personnel de rencontre avec le Seigneur que peut mûrir ensuite la mission sociale qui est renfermée dans l'Eucharistie. »</p>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.5);font-style:italic;">— Benoît XVI, Sacrement de l'amour, n°66</p>
+      </div>
+      <div class="adoration-horaires">
+        <p style="font-family:var(--caps);font-size:.68rem;letter-spacing:.14em;color:var(--or-clair);margin-bottom:1.2rem;">HORAIRES HEBDOMADAIRES</p>
+        <div class="horaire-row">
+          <span class="horaire-day">Jeudi</span>
+          <div>
+            <div class="horaire-time">17h45 – 18h30</div>
+            <div class="horaire-lieu">Église de Sébazac</div>
+          </div>
+        </div>
+        <div class="horaire-row">
+          <span class="horaire-day">Vendredi</span>
+          <div>
+            <div class="horaire-time">18h00 – 19h00</div>
+            <div class="horaire-lieu">Oratoire Saint-Joseph</div>
+          </div>
+        </div>
+        <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin-top:1rem;font-style:italic;">Entrée libre, en silence.<br>Venez comme vous êtes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COMMENT PRIER ── -->
+<section class="bg-warm">
+  <div class="container">
+    <div class="reveal text-center" style="margin-bottom:2.5rem;">
+      <div class="sec-label">Pour débuter</div>
+      <h2 class="sec-title">Comment <em>commencer à prier</em> ?</h2>
+      <div class="sec-divider" style="margin:1.2rem auto;"></div>
+      <p class="sec-lead" style="margin:0 auto;">La prière n'est pas compliquée. C'est simplement parler à Dieu comme à un ami — avec ce qu'on est, là où on est.</p>
+    </div>
+    <div class="prier-steps">
+      <div class="prier-step reveal reveal-delay-1">
+        <span class="num">1</span>
+        <h4>Se poser</h4>
+        <p>Choisir un moment calme, s'asseoir, respirer. Laisser le silence s'installer intérieurement.</p>
+      </div>
+      <div class="prier-step reveal reveal-delay-2">
+        <span class="num">2</span>
+        <h4>S'adresser à Dieu</h4>
+        <p>Avec vos propres mots ou une prière connue : Notre Père, Je vous salue Marie, un psaume...</p>
+      </div>
+      <div class="prier-step reveal reveal-delay-3">
+        <span class="num">3</span>
+        <h4>Écouter</h4>
+        <p>La prière c'est aussi le silence. Laisser Dieu parler à travers les pensées, les images, la paix.</p>
+      </div>
+      <div class="prier-step reveal reveal-delay-4">
+        <span class="num">4</span>
+        <h4>Rejoindre un groupe</h4>
+        <p>La prière communautaire amplifie et nourrit la prière personnelle. Venez nous rejoindre !</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BANDE PRIANTE ── -->
+<div class="prier-band">
+  <div class="container-sm text-center reveal">
+    <p style="font-family:var(--caps);font-size:.7rem;letter-spacing:.2em;color:var(--or-clair);margin-bottom:1.5rem;">✦ PRIÈRE ✦</p>
+    <p style="font-family:var(--serif);font-size:1.5rem;font-style:italic;color:var(--blanc);line-height:1.85;max-width:640px;margin:0 auto;">
+      « Seigneur, apprends-nous à prier. »
+    </p>
+    <p style="font-family:var(--caps);font-size:.72rem;letter-spacing:.12em;color:var(--or-clair);margin-top:1rem;">Luc 11, 1</p>
+    <div style="margin-top:2.5rem;">
+      <a href="contact.html" class="btn btn-or">Rejoindre un groupe de prière</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── LIENS ── -->
+<section class="bg-creme">
+  <div class="container">
+    <div class="reveal text-center" style="margin-bottom:2.5rem;">
+      <div class="sec-label">Pour aller plus loin</div>
+      <h2 class="sec-title">Approfondir <em>sa foi</em></h2>
+    </div>
+    <div class="grid-3 reveal">
+      <a href="reconciliation.html" class="card card-v" style="text-decoration:none;color:inherit;"><div class="card-body" style="padding:2rem;"><div class="card-icon-wrap">🕊️</div><h3 class="card-title">Réconciliation</h3><p class="card-desc">Le sacrement du pardon qui libère et apaise.</p><span class="card-link">Découvrir</span></div></a>
+      <a href="malades.html" class="card card-v" style="text-decoration:none;color:inherit;"><div class="card-body" style="padding:2rem;"><div class="card-icon-wrap">🤲</div><h3 class="card-title">Service des malades</h3><p class="card-desc">Porter la prière et la communion aux plus fragiles.</p><span class="card-link">Découvrir</span></div></a>
+      <a href="s-engager.html" class="card card-v" style="text-decoration:none;color:inherit;"><div class="card-body" style="padding:2rem;"><div class="card-icon-wrap">❤️</div><h3 class="card-title">S'engager</h3><p class="card-desc">Mettre son talent au service de la communauté.</p><span class="card-link">Découvrir</span></div></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-logo">Sainte Émilie des Causses</div><p class="footer-tagline">Choisissez d'être vous… et de le vivre !</p><div class="footer-contact"><p>📍 16 avenue des Lilas, 12850 Onet-le-Château</p><p>📞 <a href="tel:0565670574">05 65 67 05 74</a></p><p>✉️ <a href="mailto:emiliedescausses@gmail.com">emiliedescausses@gmail.com</a></p></div></div><div class="footer-col"><h4>La paroisse</h4><ul><li><a href="la-paroisse.html">Présentation</a></li><li><a href="index.html">Accueil</a></li></ul></div><div class="footer-col"><h4>Étapes de vie</h4><ul><li><a href="bapteme.html">Baptême</a></li><li><a href="catechisme.html">Catéchisme</a></li><li><a href="mariage.html">Mariage</a></li><li><a href="obseques.html">Obsèques</a></li></ul></div><div class="footer-col"><h4>Spiritualité</h4><ul><li><a href="prier.html">Prier ensemble</a></li><li><a href="reconciliation.html">Réconciliation</a></li><li><a href="malades.html">Service des malades</a></li><li><a href="contact.html">Contact</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Paroisse Sainte Émilie des Causses</p><p><a href="https://rodez.catholique.fr" target="_blank">Diocèse de Rodez</a></p></div></div></footer>
+
+<script>
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
+window.addEventListener('scroll',()=>document.getElementById('mainNav').classList.toggle('scrolled',scrollY>20));
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Étoiles générées dynamiquement
+const etoiles = document.querySelector('.etoiles');
+for(let i=0;i<55;i++){
+  const e=document.createElement('div');
+  e.className='etoile';
+  const s=Math.random()*3+1;
+  e.style.cssText=`width:${s}px;height:${s}px;top:${Math.random()*85}%;left:${Math.random()*100}%;--dur:${2+Math.random()*4}s;--del:${Math.random()*5}s;`;
+  etoiles.appendChild(e);
+}
+</script>
+</body>
+</html>
